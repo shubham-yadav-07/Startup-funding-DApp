@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+}
+
+
+header {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: #1f2937;
+
+    color: white;
+}
+
+
+header h1 {
+
+    margin-bottom: 10px;
+}
+
+
+header p {
+
+    margin: 8px;
+}
+
+
+main {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(300px, 1fr)
+        );
+
+    gap: 20px;
+}
+
+
+.card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.card h2 {
+
+    margin-top: 0;
+}
+
+
+label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background: #1d4ed8;
+}
+
+
+#connectButton {
+
+    width: auto;
+
+    padding: 10px 25px;
+}
+
+
+#statusResult {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #f1f5f9;
+
+    border-radius: 8px;
+
+    line-height: 1.7;
+}
+
+
+#message {
+
+    padding: 15px;
+
+    background: #f1f5f9;
+
+    border-radius: 8px;
+}
