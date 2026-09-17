@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Startup Funding DApp
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js">
+    </script>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>
+        Startup Funding DApp
+    </h1>
+
+    <p>
+        Blockchain-Based Startup Funding Platform
+    </p>
+
+
+    <button id="connectButton">
+        Connect MetaMask
+    </button>
+
+
+    <p id="walletAddress">
+        Wallet not connected
+    </p>
+
+</header>
+
+
+
+<main>
+
+
+    <!-- APPLY -->
+
+    <section class="card">
+
+        <h2>
+            Apply for Funding
+        </h2>
+
+
+        <label>
+            Startup Name
+        </label>
+
+
+        <input
+            type="text"
+            id="startupName"
+            placeholder="Enter startup name"
+        >
+
+
+        <label>
+            Funding Amount
+        </label>
+
+
+        <input
+            type="number"
+            id="fundingAmount"
+            placeholder="Enter ETH amount"
+            step="0.001"
+        >
+
+
+        <button id="applyButton">
+            Apply Funding
+        </button>
+
+    </section>
+
+
+
+    <!-- APPROVE -->
+
+    <section class="card">
+
+        <h2>
+            Approve Funding
+        </h2>
+
+
+        <label>
+            Application ID
+        </label>
+
+
+        <input
+            type="number"
+            id="approveId"
+            placeholder="Enter application ID"
+        >
+
+
+        <button id="approveButton">
+            Approve Funding
+        </button>
+
+    </section>
+
+
+
+    <!-- DISBURSE -->
+
+    <section class="card">
+
+        <h2>
+            Disburse Funds
+        </h2>
+
+
+        <label>
+            Application ID
+        </label>
+
+
+        <input
+            type="number"
+            id="disburseId"
+            placeholder="Enter application ID"
+        >
+
+
+        <button id="disburseButton">
+            Disburse Funds
+        </button>
+
+    </section>
+
+
+
+    <!-- STATUS -->
+
+    <section class="card">
+
+        <h2>
+            Check Funding Status
+        </h2>
+
+
+        <label>
+            Application ID
+        </label>
+
+
+        <input
+            type="number"
+            id="statusId"
+            placeholder="Enter application ID"
+        >
+
+
+        <button id="statusButton">
+            Get Status
+        </button>
+
+
+        <div id="statusResult">
+
+            No application selected.
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MESSAGE -->
+
+    <section class="card">
+
+        <h2>
+            Transaction Status
+        </h2>
+
+
+        <div id="message">
+
+            Ready.
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
